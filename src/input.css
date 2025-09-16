@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* @font-face {
+    font-family: "VisbyCF";
+    src: url('/fonts/Fontspring-DEMO-visbycf-regular.otf');
+}
+ */
+
+@theme {
+
+--color-primary-color: #EB662B;
+--color-text-color: #05073C;
+
+
+--font-primary: "Inter", sans-serif;
+
+
+
+}

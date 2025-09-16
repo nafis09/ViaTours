@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ViaTours</title>
+  <link rel="icon" href="images/destination.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./src/output.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  
+</head>
+
+<body class="m-0">
+
+   <nav class="shadow-lg bg-white flex md:gap-10 justify-between items-center md:px-12 lg:px-20 px-4 py-2 fixed top-0 z-40 w-full">
+            <li class="list-none"><img src="images/logo-1.png" alt="Logo" class="md:ml-42 w-32 md:w-auto"></li>
+            <li class="list-none"><input type="text" class="p-3 md:w-[350px] md:h-[40px]" placeholder="Search destinations or activities"></li>
+        <ul class="hidden md:flex space-x-6 ml-5 px-6 py-4 justify-center items-center font-primary text-base text-text-color">
+            
+            <div class="flex justify-between items-end ml-15">
+            <li><a href="#" class="block px-4 py-4 hover:text-primary-color">Destinations</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-primary-color">Activities</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-primary-color">USD</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-primary-color">Sign up</a></li>
+            <li><a href="#" class="block px-5 py-3 ml-5 bg-primary-color hover:text-text-color hover:bg-white text-white font-primary font-medium text-base rounded-[200px]">Log in</a></li>
+            </div>
+
+        </ul>
+
+             <div>
+                <button id="menu-btn" class="md:hidden flex flex-col justify-between items-end w-6 h-6 text-primary-color focus:outline-none">
+                <span class="block h-1 w-full bg-primary-color transform transition duration-300 ease-in-out origin-center"></span>
+                <span class="block h-1 w-full bg-primary-color transform transition duration-300 ease-in-out origin-center"></span>
+                <span class="block h-1 w-full bg-primary-color transform transition duration-300 ease-in-out origin-center"></span>
+                </button>
+
+                <div id="menu" class="hidden md:hidden px-6 py-4 absolute top-10 left-0 w-full bg-white shadow-lg">
+                    
+                    <ul class="flex flex-col items-center justify-between space-y-4 font-medium text-primary-color">
+                        <li><a href="#" class="hover:text-primary2-color py-2">Home</a></li>
+                        <li><a href="#" class="hover:text-primary2-color py-2">About</a></li>
+                        <li><a href="#" class="hover:text-primary2-color py-2">Service</a></li>
+                        <li><a href="#" class="hover:text-primary2-color py-2">Projects</a></li>
+                        <li><a href="#" class="hover:text-primary2-color py-2">Feedbacks</a></li>
+                        <li><a href="#" class="bg-[#28887A] hover:text-black hover:bg-[#FFD476] text-white text-base px-6 py-2 my-2">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>   
+    </nav>
+ 
+    <section class="relative">
+        <div class="mt-22 ml-15 mr-15">
+           <img src="images/hero.png" alt="">
+        </div>
+
+        <div class="absolute translate-x-135 -translate-y-115">
+            <div>
+                <h1 class="font-primary font-semibold text-7xl text-white text-center mb-2">Your world of joy</h1>
+                <p class="font-primary text-base text-white text-center mb-15">From local escapes to far-flung adventures, find what makes you happy anytime, anywhere</p>
+            </div>
+            <div class="flex gap-9 bg-white px-5 py-4 rounded-xl">
+                <div class="flex gap-2">
+                    <input type="text" class="w-12 h-12 rounded-xl border border-[#E7E6E6] drop-shadow-lg">
+                    <div>
+                        <h2 class="font-primary font-medium text-base text-text-color">Where</h2>
+                        <p class="font-primary text-sm text-[#717171]">Search destinations</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-2">
+                    <input type="text" class="w-12 h-12 rounded-xl border border-[#E7E6E6] drop-shadow-lg">
+                    <div>
+                        <h2 class="font-primary font-medium text-base text-text-color">When</h2>
+                        <p class="font-primary text-sm text-[#717171]">February 05 ~ March 14</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-2">
+                    <input type="text" class="w-12 h-12 rounded-xl border border-[#E7E6E6] drop-shadow-lg">
+                    <div>
+                        <h2 class="font-primary font-medium text-base text-text-color">Tour Type</h2>
+                        <p class="font-primary text-sm text-[#717171]">All tour</p>
+                    </div>
+                    <a href="#" class=" px-8 py-4 pl-14 ml-25 bg-primary-color hover:text-text-color hover:bg-white text-white font-primary font-medium text-base rounded-xl">Search</a>
+                </div> 
+
+
+                </div>
+            </div>   
+        </div>
+
+    </section>
+
+<section class="px-4 md:px-0">
+        <div class="mb-[50px] md:mb-[100px] ml-0 md:ml-[220px] mr-0 md:mr-[100px] text-left">
+            <div>
+               <h2 class="text-text-color font-bold font-primary text-2xl md:text-3xl mt-10 md:mt-25">Why choose Tourz<h2>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6 md:gap-2 md:grid-cols-4 mt-5 md:mt-10">
+
+                <div class="w-full md:w-[255px] relative text-left">
+                    <img src="images/ticket.svg.png" alt="" class="w-15 md:w-auto">
+                    <h3 class="font-primary text-base md:text-lg text-text-color mt-4 md:mt-7 font-medium">Ultimate flexibility</h3>
+                    <p class="font-primary text-sm md:text-base text-text-color mt-3">You're in control, with free cancellation and payment options to satisfy any plan or budget.</p>
+                </div>
+
+                
+                <div class="w-full md:w-[255px] relative text-left">
+                    <img src="images/hot-air-balloon.svg.png" alt="" class="w-15 md:w-auto">
+                    <h3 class="font-primary text-base md:text-lg text-text-color mt-4 md:mt-7 font-medium">Memorable experiences</h3>
+                    <p class="font-primary text-sm md:text-base text-text-color mt-3">Browse and book tours and activities so incredible, you'll want to tell your friends.</p>
+                </div>
+
+                
+                <div class="w-full md:w-[255px] relative text-left">
+                    <img src="images/diamond.svg.png" alt="" class="w-15 md:w-auto">
+                    <h3 class="font-primary text-base md:text-lg text-text-color mt-4 md:mt-7 font-medium">Quality at our core</h3>
+                    <p class="font-primary text-sm md:text-base text-text-color mt-3">High-quality standards. Millions of reviews. A tourz company.</p>
+                </div>
+
+                <div class="w-full md:w-[255px] relative text-left">
+                    <img src="images/medal.svg.png" alt="" class="w-15 md:w-auto">
+                    <h3 class="font-primary text-base md:text-lg text-text-color mt-4 md:mt-7 font-medium">Award-winning support</h3>
+                    <p class="font-primary text-sm md:text-base text-text-color mt-3">New price? New plan? No problem. We're here to help, 24/7.</p>
+                </div>
+
+            </div>    
+        </div>
+    </section>
+
+    <section class="px-4 md:px-0">
+        <div class="mb-[50px] md:mb-[100px] ml-0 md:ml-[220px] mr-0 md:mr-[100px] text-left">
+            <div class="flex gap-285 items-center">
+               <h2 class="text-text-color font-bold font-primary text-2xl md:text-3xl">Trending destinations<h2>
+                <a href="#" class="text-text-color hover:text-primary-color font-primary text-sm md:text-base">See all</a>
+            </div>
+        
+
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-8 mt-5 md:mt-10">
+
+                <div class="w-full md:w-[135px] relative text-center">
+                    <img src="images/image1.png" alt="">
+                    <h3 class="font-primary text-sm md:text-base text-text-color mt-2 md:mt-4 font-medium">Paris</h3>
+                    <p class="font-primary text-sm md:text-sm text-text-color mt-1">100+ Tours</p>
+                </div>
+
+                <div class="w-full md:w-[135px] relative text-center">
+                    <img src="images/image2.png" alt="">
+                    <h3 class="font-primary text-sm md:text-base text-text-color mt-2 md:mt-4 font-medium">Singapore</h3>
+                    <p class="font-primary text-sm md:text-sm text-text-color mt-1">300+ Tours</p>
+                </div>
+
+                <div class="w-full md:w-[135px] relative text-center">
+                    <img src="images/image3.png" alt="">
+                    <h3 class="font-primary text-sm md:text-base text-text-color mt-2 md:mt-4 font-medium">Roma</h3>
+                    <p class="font-primary text-sm md:text-sm text-text-color mt-1">400+ Tours</p>
+                </div>
+
+                <div class="w-full md:w-[135px] relative text-center">
+                    <img src="images/image4.png" alt="">
+                    <h3 class="font-primary text-sm md:text-base text-text-color mt-2 md:mt-4 font-medium">Bangkok</h3>
+                    <p class="font-primary text-sm md:text-sm text-text-color mt-1">600+ Tours</p>
+                </div>
+
+                <div class="w-full md:w-[135px] relative text-center">
+                    <img src="images/image5.png" alt="">
+                    <h3 class="font-primary text-sm md:text-base text-text-color mt-2 md:mt-4 font-medium">Bali</h3>
+                    <p class="font-primary text-sm md:text-sm text-text-color mt-1">100+ Tours</p>
+                </div>
+
+                <div class="w-full md:w-[135px] relative text-center">
+                    <img src="images/image6.png" alt="">
+                    <h3 class="font-primary text-sm md:text-base text-text-color mt-2 md:mt-4 font-medium">Phuket</h3>
+                    <p class="font-primary text-sm md:text-sm text-text-color mt-1">200+ Tours</p>
+                </div>
+
+                <div class="w-full md:w-[135px] relative text-center">
+                    <img src="images/image7.png" alt="">
+                    <h3 class="font-primary text-sm md:text-base text-text-color mt-2 md:mt-4 font-medium">Tokyo</h3>
+                    <p class="font-primary text-sm md:text-sm text-text-color mt-1">700+ Tours</p>
+                </div>
+
+                <div class="w-full md:w-[135px] relative text-center">
+                    <img src="images/image8.png" alt="">
+                    <h3 class="font-primary text-sm md:text-base text-text-color mt-2 md:mt-4 font-medium">Cappadocia</h3>
+                    <p class="font-primary text-sm md:text-sm text-text-color mt-1">900+ Tours</p>
+                </div>
+
+            </div>  
+        </div>  
+    </section>
+
+
+
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+        const lines = btn.querySelectorAll('span');
+        
+        btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        
+        lines[0].classList.toggle('rotate-45');
+        lines[0].classList.toggle('translate-y-2.5');
+        
+        lines[1].classList.toggle('opacity-0');
+
+        lines[2].classList.toggle('-rotate-45');
+        lines[2].classList.toggle('-translate-y-2.5');
+        });
+    </script> 
+
+</body>
+</html>
