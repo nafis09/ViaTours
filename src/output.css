@@ -1275,6 +1275,11 @@
       margin-left: 220px;
     }
   }
+  .md\:ml-\[250px\] {
+    @media (width >= 48rem) {
+      margin-left: 250px;
+    }
+  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -1429,6 +1434,12 @@
   .md\:translate-x-110 {
     @media (width >= 48rem) {
       --tw-translate-x: calc(var(--spacing) * 110);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .md\:translate-x-120 {
+    @media (width >= 48rem) {
+      --tw-translate-x: calc(var(--spacing) * 120);
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
