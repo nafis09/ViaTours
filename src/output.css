@@ -1639,6 +1639,16 @@
       padding-block: calc(var(--spacing) * 5);
     }
   }
+  .md\:pr-40 {
+    @media (width >= 48rem) {
+      padding-right: calc(var(--spacing) * 40);
+    }
+  }
+  .md\:pr-50 {
+    @media (width >= 48rem) {
+      padding-right: calc(var(--spacing) * 50);
+    }
+  }
   .md\:pb-4 {
     @media (width >= 48rem) {
       padding-bottom: calc(var(--spacing) * 4);
