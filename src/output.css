@@ -1280,6 +1280,11 @@
       margin-left: 250px;
     }
   }
+  .md\:ml-\[280px\] {
+    @media (width >= 48rem) {
+      margin-left: 280px;
+    }
+  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -1440,6 +1445,12 @@
   .md\:translate-x-120 {
     @media (width >= 48rem) {
       --tw-translate-x: calc(var(--spacing) * 120);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .md\:translate-x-130 {
+    @media (width >= 48rem) {
+      --tw-translate-x: calc(var(--spacing) * 130);
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
