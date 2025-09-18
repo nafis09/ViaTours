@@ -229,6 +229,9 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
+  .m-auto {
+    margin: auto;
+  }
   .mx-4 {
     margin-inline: calc(var(--spacing) * 4);
   }
@@ -400,6 +403,9 @@
   .h-auto {
     height: auto;
   }
+  .h-full {
+    height: 100%;
+  }
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
@@ -429,6 +435,15 @@
   }
   .w-32 {
     width: calc(var(--spacing) * 32);
+  }
+  .w-72 {
+    width: calc(var(--spacing) * 72);
+  }
+  .w-\[1200px\] {
+    width: 1200px;
+  }
+  .w-\[1215px\] {
+    width: 1215px;
   }
   .w-full {
     width: 100%;
@@ -1539,6 +1554,51 @@
       margin-left: calc(var(--spacing) * 65);
     }
   }
+  .lg\:h-\[264px\] {
+    @media (width >= 64rem) {
+      height: 264px;
+    }
+  }
+  .lg\:h-\[306px\] {
+    @media (width >= 64rem) {
+      height: 306px;
+    }
+  }
+  .lg\:w-72 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 72);
+    }
+  }
+  .lg\:w-\[280px\] {
+    @media (width >= 64rem) {
+      width: 280px;
+    }
+  }
+  .lg\:w-\[300px\] {
+    @media (width >= 64rem) {
+      width: 300px;
+    }
+  }
+  .lg\:w-\[400px\] {
+    @media (width >= 64rem) {
+      width: 400px;
+    }
+  }
+  .lg\:w-\[420px\] {
+    @media (width >= 64rem) {
+      width: 420px;
+    }
+  }
+  .lg\:w-\[500px\] {
+    @media (width >= 64rem) {
+      width: 500px;
+    }
+  }
+  .lg\:w-\[960px\] {
+    @media (width >= 64rem) {
+      width: 960px;
+    }
+  }
   .lg\:grid-cols-4 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1584,9 +1644,29 @@
       padding-block: calc(var(--spacing) * 1);
     }
   }
+  .lg\:pr-50 {
+    @media (width >= 64rem) {
+      padding-right: calc(var(--spacing) * 50);
+    }
+  }
+  .lg\:pr-55 {
+    @media (width >= 64rem) {
+      padding-right: calc(var(--spacing) * 55);
+    }
+  }
   .lg\:pr-65 {
     @media (width >= 64rem) {
       padding-right: calc(var(--spacing) * 65);
+    }
+  }
+  .lg\:pl-50 {
+    @media (width >= 64rem) {
+      padding-left: calc(var(--spacing) * 50);
+    }
+  }
+  .lg\:pl-55 {
+    @media (width >= 64rem) {
+      padding-left: calc(var(--spacing) * 55);
     }
   }
   .lg\:pl-65 {
