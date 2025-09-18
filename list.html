@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ViaTours List</title>
+  <link rel="icon" href="images/destination.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./src/output.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body class="m-0">
+
+   <nav class="shadow-lg bg-white flex flex-wrap md:flex-nowrap gap-2 md:gap-5 lg:gap-6 justify-between items-center px-4 py-2 md:px-40 lg:px-65 lg:py-1  fixed top-0 z-40 w-full">
+            <li class="list-none"><img src="images/logo-1.png" alt="Logo" class="w-32 md:w-auto"></li>
+            <li class="list-none flex-grow max-w-xs md:max-w-none"><input type="text" class="p-2 md:px-12 w-full md:w-[350px] h-[40px]" placeholder="Search destinations or activities"></li>
+        <ul class="hidden md:flex space-x-6 ml-5 px-6 py-4 justify-center items-center font-primary text-base text-text-color">
+            
+            <div class="flex justify-between items-center">
+            <li><a href="#" class="block px-4 py-4 hover:text-primary-color">Destinations</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-primary-color">Activities</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-primary-color">USD</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-primary-color">Sign up</a></li>
+            <li><a href="#" class="block px-5 py-3 ml-5 bg-primary-color hover:text-text-color hover:bg-white text-white font-primary font-medium text-base rounded-[200px]">Log in</a></li>
+            </div>
+
+        </ul>
+
+            <div class="md:hidden">
+                <button id="menu-btn" class="flex flex-col justify-between items-end w-6 h-6 text-primary-color focus:outline-none">
+                <span class="block h-1 w-full bg-primary-color transform transition duration-300 ease-in-out origin-center"></span>
+                <span class="block h-1 w-full bg-primary-color transform transition duration-300 ease-in-out origin-center"></span>
+                <span class="block h-1 w-full bg-primary-color transform transition duration-300 ease-in-out origin-center"></span>
+                </button>
+
+                <div id="menu" class="hidden md:hidden px-6 py-4 absolute top-15 left-0 w-full bg-white shadow-lg">
+                    
+                    <ul class="flex flex-col items-center justify-between space-y-4 font-medium text-primary-color">
+                        <li><a href="#" class="hover:text-primary2-color py-2">Destinations</a></li>
+                        <li><a href="#" class="hover:text-primary2-color py-2">Activities</a></li>
+                        <li><a href="#" class="hover:text-primary2-color py-2">USD</a></li>
+                        <li><a href="#" class="hover:text-primary2-color py-2">Sign up</a></li>
+                        <li><a href="#" class="block px-5 py-3 bg-primary-color hover:text-text-color hover:bg-white text-white font-primary font-medium text-base rounded-[200px]">Log in</a></li>
+                    </ul>
+                </div>
+            </div>   
+    </nav>
+
+    <section class="p-5 lg:pl-65 lg:pr-65 mt-30 mb-10">
+        <div class="flex justify-between items-center mb-8">
+            <p class="font-primary text-sm text-text-color">Home>Tours>Phuket</p>
+            <p class="font-primary text-sm text-text-color">THE 10 BEST Phuket Tours & Excursions</p>
+        </div>
+        <div>
+            <h1 class="font-primary font-bold md:text-xl lg:text-[40px] text-text-color">Explore all things to do in Phuket</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="flex">
+            <div>
+                <div class="bg-primary-color p-8">
+                    <p class="text-white font-primary font-medium font-sm pb-3">When are you traveling?</p>
+                  <div class="flex gap-2 items-center bg-white p-4 border rounded-xl border-white">
+                        <input type="text" class=" w-5 h-5 border border-[#E7E6E6] text-text-color p-1 drop-shadow-lg">
+                     <div>
+                        <p class="font-primary text-xs lg:text-sm text-[#000000]">February 05 ~ March 14</p>
+                     </div>
+                  </div>
+                </div>
+                
+                <div class="p-8">
+                    <h4 class="text-lg text-text-color font-primary font-medium">Tour type</h4>
+                    
+                    <div class="flex gap-2 pt-4">
+                        <input type="checkbox" class="w-5 h-5 rounded border border-text-color p-1">
+                        <p class="font-primary text-sm text-text-color">Nature Tours</p>
+                    </div>
+
+                    <div class="flex gap-2 pt-4">
+                        <input type="checkbox" class="w-5 h-5 rounded border border-text-color p-1">
+                        <p class="font-primary text-sm text-text-color">Adventure Tours</p>
+                    </div>
+
+                    <div class="flex gap-2 pt-4">
+                        <input type="checkbox" class="w-5 h-5 rounded border border-text-color p-1">
+                        <p class="font-primary text-sm text-text-color">Cultural Tours</p>
+                    </div>
+
+                    <div class="flex gap-2 pt-4">
+                        <input type="checkbox" class="w-5 h-5 rounded border border-text-color p-1">
+                        <p class="font-primary text-sm text-text-color">Food Tours</p>
+                    </div>
+
+                    <div class="flex gap-2 pt-4">
+                        <input type="checkbox" class="w-5 h-5 rounded border border-text-color p-1">
+                        <p class="font-primary text-sm text-text-color">City Tours</p>
+                    </div>
+
+                    <div class="flex gap-2 pt-4">
+                        <input type="checkbox" class="w-5 h-5 rounded border border-text-color p-1">
+                        <p class="font-primary text-sm text-text-color mb-4">Cruises Tours</p>
+                    </div>
+
+                    <a href="#" class="font-primary font-medium text-base text-[#4A43C4]">See More</a>
+                </div>
+
+            </div>
+
+            <div>
+                <!-- side card -->
+            </div>
+        </div>
+    </section>
+
+   
+
+
+
+
+    <!-- <footer class=" mt-[50px] md:mt-[50px] mb-[50px] md:mb-[100px] ml-4 md:ml-[150px] mr-4 md:mr-[150px]">
+            <div class="flex justify-between items-center pt-10 border-b border-[#EB662B] pb-10">
+               <h2 class="text-text-color font-medium font-primary text-lg md:text-xl">Speak to our expert at<span class="text-primary-color">1-800-453-6744</span><h2>
+                <a href="#" class="text-text-color hover:text-primary-color font-primary font-medium text-sm md:text-base mb-10">Follow Us</a>
+            </div>
+        <div class="flex flex-col md:flex-row justify-between items-start flex-wrap pt-10">
+            <div class="pb-10 w-full md:w-auto">
+                <h1 class="font-primary font-medium text-xl text-text-color mb-5">Contact</h1>
+                <li class="list-none w-full md:w-[293px] mt-4 md:mt-8 font-primary text-sm md:text-base text-left mb-2 md:mb-4">328 Queensberry Street, North Melbourne VIC3051, Australia.</li>
+                <li class="list-none w-full md:w-[293px] mt-4 md:mt-8 font-primary text-sm md:text-base text-left mb-2 md:mb-4">hi@viatours.com</li>
+            </div>
+
+            <div class="pb-10 w-full md:w-auto">
+                <h3 class="pb-6 md:pb-10 list-none font-primary font-semibold text-text-color text-base md:text-lg text-left">Company</h3>
+                
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">About Us</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Tourz Reviews</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Contact Us</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Travel Guides</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Data Policy</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Cookie Policy</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Legal</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Sitemap</li>
+            </div>
+
+            <div class="pb-10 w-full md:w-auto">
+                <h3 class="pb-6 md:pb-10 list-none font-primary font-semibold text-text-color text-base md:text-lg text-left">Support</h3>
+                
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Get in Touch</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Help center</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Contact Us</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Live chat</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">How it works</li>
+            </div>
+
+            <div class="pb-10 w-full md:w-auto">
+                <h3 class="pb-6 md:pb-10 list-none font-primary font-semibold text-text-color text-base md:text-lg text-left">Newsletter</h3>       
+                <li class="pb-2 md:pb-4 list-none text-text-color font-primary text-sm md:text-base text-left font-medium">Subscribe to the free newsletter and stay <br> up to date</li>
+                <li class="list-none bg-white rounded-xl border border-[#E7E6E6]"><input class="font-primary p-5 text-sm text-[#757575]" type="email" name="" id="" placeholder="Your email address"><a href="#" class="font-primary text-text-color text-sm ">Send</a></li>
+
+                <h3 class="pb-6 md:pb-4 list-none font-primary font-semibold text-text-color text-base md:text-lg text-left mt-5">Mobile Apps</h3>       
+                <li class="pb-2 pl-7 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">iOS App</li>
+                <li class="pb-2 pl-7 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Android App</li>
+            </div>
+
+        </div>
+
+        <div class="pt-10 flex flex-col md:flex-row gap-4 md:gap-240 justify-start flex-wrap">
+            
+            <p class="list-none font-primary text-sm md:text-base text-text-color">© Copyright Viatours 2025</p>
+            
+            
+        </div>
+    </footer> -->
+
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+        const lines = btn.querySelectorAll('span');
+        
+        btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        
+        lines[0].classList.toggle('rotate-45');
+        lines[0].classList.toggle('translate-y-2.5');
+        
+        lines[1].classList.toggle('opacity-0');
+
+        lines[2].classList.toggle('-rotate-45');
+        lines[2].classList.toggle('-translate-y-2.5');
+        });
+
+        var swiper = new Swiper(".default-carousel", {
+        loop: true,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        });
+
+    </script> 
+
+</body>
+</html>
