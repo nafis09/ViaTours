@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ViaTours Details</title>
+  <link rel="icon" href="images/destination.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./src/output.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body class="m-0">
+
+   <nav class="shadow-lg bg-white flex flex-wrap md:flex-nowrap gap-2 md:gap-5 lg:gap-6 justify-between items-center px-4 py-2 md:px-40 lg:px-65 lg:py-1  fixed top-0 z-40 w-full">
+            <li class="list-none"><a href="index.html"><img src="images/logo-1.png" alt="Logo" class="w-32 md:w-auto"></a></li>
+            <li class="list-none flex-grow max-w-xs md:max-w-none"><input type="text" class="p-2 md:px-12 w-full md:w-[350px] h-[40px]" placeholder="Search destinations or activities"></li>
+        <ul class="hidden md:flex space-x-6 ml-5 px-6 py-4 justify-center items-center font-primary text-base text-text-color">
+            
+            <div class="flex justify-between items-center">
+            <li><a href="#" class="block px-4 py-4 hover:text-primary-color">Destinations</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-primary-color">Activities</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-primary-color">USD</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-primary-color">Sign up</a></li>
+            <li><a href="#" class="block px-5 py-3 ml-5 bg-primary-color hover:text-text-color hover:bg-white text-white font-primary font-medium text-base rounded-[200px]">Log in</a></li>
+            </div>
+
+        </ul>
+
+            <div class="md:hidden">
+                <button id="menu-btn" class="flex flex-col justify-between items-end w-6 h-6 text-primary-color focus:outline-none">
+                <span class="block h-1 w-full bg-primary-color transform transition duration-300 ease-in-out origin-center"></span>
+                <span class="block h-1 w-full bg-primary-color transform transition duration-300 ease-in-out origin-center"></span>
+                <span class="block h-1 w-full bg-primary-color transform transition duration-300 ease-in-out origin-center"></span>
+                </button>
+
+                <div id="menu" class="hidden md:hidden px-6 py-4 absolute top-15 left-0 w-full bg-white shadow-lg">
+                    
+                    <ul class="flex flex-col items-center justify-between space-y-4 font-medium text-primary-color">
+                        <li><a href="#" class="hover:text-primary2-color py-2">Destinations</a></li>
+                        <li><a href="#" class="hover:text-primary2-color py-2">Activities</a></li>
+                        <li><a href="#" class="hover:text-primary2-color py-2">USD</a></li>
+                        <li><a href="#" class="hover:text-primary2-color py-2">Sign up</a></li>
+                        <li><a href="#" class="block px-5 py-3 bg-primary-color hover:text-text-color hover:bg-white text-white font-primary font-medium text-base rounded-[200px]">Log in</a></li>
+                    </ul>
+                </div>
+            </div>   
+    </nav>
+
+    <section class="p-5 lg:pl-65 lg:pr-65 mt-30">
+        <div class="flex justify-between items-center mb-8">
+            <p class="font-primary text-sm text-text-color">Home>Tours>Phuket</p>
+            <p class="font-primary text-sm text-text-color">THE 10 BEST Phuket Tours & Excursions</p>
+        </div>
+        <div class="flex gap-2 items-center mb-6">
+            <a href="#" class="bg-[#EB662B]/[5%] px-4 py-3 text-primary-color font-primary font-medium text-sm">Bestseller</a>
+            <a href="#" class="bg-[#F5F5F5] px-4 py-3 text-text-color font-primary font-medium text-sm">Free cancellation</a>
+        </div>
+        <div>
+            <h1 class="font-primary font-bold md:text-xl lg:text-[40px] text-text-color">Phi Phi Islands Adventure Day Trip with <br> Seaview Lunch by V. Marine Tour</h1>
+        </div>
+    </section>
+
+    <section class="p-5 lg:pl-65 lg:pr-65 mb-10 ">
+        <div class="flex justify-between items-center">
+            <div class="flex gap-10 justify-between items-center pl-30">
+                <p class="font-primary text-base text-text-color">4.8 (269)</p>
+                <p class="font-primary text-base text-text-color">Paris, France</p>
+                <p class="font-primary text-base text-text-color">30K+ booked</p>
+            </div>
+
+            <div class="flex gap-14 justify-between items-center">
+                <p class="font-primary text-base text-text-color">Share</p>
+                <p class="font-primary text-base text-text-color">Wishlist</p>
+            </div>
+        </div>
+
+        <div class="flex gap-3 mt-9">
+            <img src="images/b1.png" alt="">
+            <div>
+                <img class="mb-3" src="images/b2.png" alt="">
+                <div class="flex gap-3">
+                    <img src="images/b3.png" alt="">
+                    <img src="images/b4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
