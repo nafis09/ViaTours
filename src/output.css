@@ -392,6 +392,9 @@
   .ml-15 {
     margin-left: calc(var(--spacing) * 15);
   }
+  .ml-18 {
+    margin-left: calc(var(--spacing) * 18);
+  }
   .block {
     display: block;
   }
@@ -669,6 +672,9 @@
   .gap-30 {
     gap: calc(var(--spacing) * 30);
   }
+  .gap-40 {
+    gap: calc(var(--spacing) * 40);
+  }
   .space-y-4 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -710,6 +716,10 @@
   .rounded-t-xl {
     border-top-left-radius: var(--radius-xl);
     border-top-right-radius: var(--radius-xl);
+  }
+  .rounded-b {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -757,6 +767,9 @@
   .border-\[\#EB662B\] {
     border-color: #EB662B;
   }
+  .border-\[\#EB662B\]\/10 {
+    border-color: color-mix(in oklab, #EB662B 10%, transparent);
+  }
   .border-gray-200 {
     border-color: var(--color-gray-200);
   }
@@ -771,6 +784,21 @@
   }
   .border-white {
     border-color: var(--color-white);
+  }
+  .bg-\[\#EB662B-10\%\] {
+    background-color: #EB662B-10%;
+  }
+  .bg-\[\#EB662B\/10\%\] {
+    background-color: #EB662B/10%;
+  }
+  .bg-\[\#EB662B\/10\] {
+    background-color: #EB662B/10;
+  }
+  .bg-\[\#EB662B\/\[10\%\]\] {
+    background-color: #EB662B/[10%];
+  }
+  .bg-\[\#EB662B\]\/10 {
+    background-color: color-mix(in oklab, #EB662B 10%, transparent);
   }
   .bg-\[\#EB662B\]\/\[5\%\] {
     background-color: color-mix(in oklab, #EB662B 5%, transparent);
@@ -789,6 +817,9 @@
   }
   .bg-\[url\(\/images\/imagedisback\.png\)\] {
     background-image: url(/images/imagedisback.png);
+  }
+  .to-10\% {
+    --tw-gradient-to-position: 10%;
   }
   .to-100\% {
     --tw-gradient-to-position: 100%;
