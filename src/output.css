@@ -679,6 +679,12 @@
   .gap-16 {
     gap: calc(var(--spacing) * 16);
   }
+  .gap-18 {
+    gap: calc(var(--spacing) * 18);
+  }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
+  }
   .gap-30 {
     gap: calc(var(--spacing) * 30);
   }
@@ -1823,6 +1829,11 @@
       width: calc(var(--spacing) * 72);
     }
   }
+  .lg\:w-\[880px\] {
+    @media (width >= 64rem) {
+      width: 880px;
+    }
+  }
   .lg\:w-\[1200px\] {
     @media (width >= 64rem) {
       width: 1200px;
@@ -1841,6 +1852,11 @@
   .lg\:w-\[1400px\] {
     @media (width >= 64rem) {
       width: 1400px;
+    }
+  }
+  .lg\:w-\[1480px\] {
+    @media (width >= 64rem) {
+      width: 1480px;
     }
   }
   .lg\:w-full {
