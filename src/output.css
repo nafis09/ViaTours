@@ -303,6 +303,9 @@
   .mt-9 {
     margin-top: calc(var(--spacing) * 9);
   }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
   .mt-11 {
     margin-top: calc(var(--spacing) * 11);
   }
@@ -1285,6 +1288,16 @@
       outline-style: none;
     }
   }
+  .sm\:w-\[200px\] {
+    @media (width >= 40rem) {
+      width: 200px;
+    }
+  }
+  .sm\:w-\[220px\] {
+    @media (width >= 40rem) {
+      width: 220px;
+    }
+  }
   .sm\:w-\[500px\] {
     @media (width >= 40rem) {
       width: 500px;
@@ -1501,6 +1514,11 @@
       height: 100%;
     }
   }
+  .md\:w-1\/2 {
+    @media (width >= 48rem) {
+      width: calc(1/2 * 100%);
+    }
+  }
   .md\:w-12 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 12);
@@ -1519,6 +1537,11 @@
   .md\:w-\[30px\] {
     @media (width >= 48rem) {
       width: 30px;
+    }
+  }
+  .md\:w-\[100px\] {
+    @media (width >= 48rem) {
+      width: 100px;
     }
   }
   .md\:w-\[135px\] {
@@ -1551,9 +1574,24 @@
       width: 367px;
     }
   }
+  .md\:w-\[400px\] {
+    @media (width >= 48rem) {
+      width: 400px;
+    }
+  }
   .md\:w-\[410px\] {
     @media (width >= 48rem) {
       width: 410px;
+    }
+  }
+  .md\:w-\[440px\] {
+    @media (width >= 48rem) {
+      width: 440px;
+    }
+  }
+  .md\:w-\[450px\] {
+    @media (width >= 48rem) {
+      width: 450px;
     }
   }
   .md\:w-\[460px\] {
@@ -1814,9 +1852,19 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .lg\:mt-0 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
   .lg\:mb-22 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 22);
+    }
+  }
+  .lg\:ml-8 {
+    @media (width >= 64rem) {
+      margin-left: calc(var(--spacing) * 8);
     }
   }
   .lg\:flex {
@@ -1919,9 +1967,19 @@
       padding-right: calc(var(--spacing) * 15);
     }
   }
+  .lg\:pr-40 {
+    @media (width >= 64rem) {
+      padding-right: calc(var(--spacing) * 40);
+    }
+  }
   .lg\:pr-65 {
     @media (width >= 64rem) {
       padding-right: calc(var(--spacing) * 65);
+    }
+  }
+  .lg\:pr-150 {
+    @media (width >= 64rem) {
+      padding-right: calc(var(--spacing) * 150);
     }
   }
   .lg\:pb-4 {
