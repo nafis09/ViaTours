@@ -11,6 +11,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
   </style>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
   <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -93,7 +94,7 @@
         </div>
     </section>
 
-    <section class="sm:w-[500px] md:w-[710px] lg:w-[1300px] p-4 lg:p-0 m-auto mt-11 mb-10 flex gap-16">
+    <section class="sm:w-[500px] md:w-[710px] lg:w-[1380px] p-4 lg:p-0 m-auto mt-11 mb-10 flex gap-16">
         <div>    
             <div class="flex flex-col md:flex-row gap-2 md:gap-25">
                 <div class="flex gap-2 items-center">
@@ -191,15 +192,81 @@
 
             </div>
 
+            <div>
+                <h1 class="font-primary font-bold text-text-color text-3xl mt-15 mb-6">Itinerary</h1>
+            
+                <ol class="relative border-s ml-3 border-dashed border-primary-color">                  
+                    <li class="mb-10 ms-4">
+                        <div class="absolute w-8 h-8 bg-primary-color rounded-full -start-4 border border-primary-color"></div>
+                        <time class="text-base font-primary pl-5 leading-7 text-text-color font-medium">Day 1: Airport Pick Up</time>
+                    </li>
+                    
+                    <li class="mb-10 ms-4">
+                        <div class="absolute w-[18px] h-[18px] bg-white rounded-[18px] -start-2.5 border-[3px] border-primary-color "></div>
+                        <time class="text-base font-primary pl-5 leading-7 text-text-color font-medium">Day 2: Temples & River Cruise</time>
+                    </li>
+
+                    <li class="mb-10 ms-4">
+                        <div class="absolute w-[18px] h-[18px] bg-white rounded-[18px] -start-2.5 border-[3px] border-primary-color "></div>
+                        <time class="text-base font-primary pl-5 leading-7 text-text-color font-medium">Day 3: Massage & Overnight Train</time>
+                        <p class="pl-5 pt-4 font-primary text-base text-text-color leading-7">Like on all of our trips, we can collect you from the airport when you land and take <br>
+                            you directly to your hotel. The first Day is just a check-in Day so you have this <br>
+                            freedom to explore the city and get settled in.</p>
+                    </li>
+
+                    <li class="mb-10 ms-4">
+                        <div class="absolute w-[18px] h-[18px] bg-white rounded-[18px] -start-2.5 border-[3px] border-primary-color "></div>
+                        <time class="text-base font-primary pl-5 leading-7 text-text-color font-medium">Day 4: Khao Sok National Park</time>
+                    </li>
+
+                    <li class="mb-10 ms-4">
+                        <div class="absolute w-[18px] h-[18px] bg-white rounded-[18px] -start-2.5 border-[3px] border-primary-color "></div>
+                        <time class="text-base font-primary pl-5 leading-7 text-text-color font-medium">Day 5: Travel to Koh Phangan</time>
+                    </li>
+
+                    <li class="mb-10 ms-4">
+                        <div class="absolute w-[18px] h-[18px] bg-white rounded-[18px] -start-2.5 border-[3px] border-primary-color "></div>
+                        <time class="text-base font-primary pl-5 leading-7 text-text-color font-medium">Day 6: Morning Chill & Muay Thai Lesson</time>
+                    </li>
+
+
+                    <li class="mb-10 ms-4">
+                        <div class="absolute w-8 h-8 bg-primary-color rounded-full -start-4 border border-primary-color"></div>
+                        <time class="text-base font-primary pl-5 leading-7 text-text-color font-medium">Day 7: Island Boat Trip</time>
+                    </li>
+                </ol>
+
+            </div>
+
+            <div class="border-b border-[#E7E6E6]">
+                <h1 class="font-primary font-bold text-text-color text-3xl mt-17 mb-8 ">Tour Map</h1>
+
+                <div class="mb-15">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15814.736340277884!2d98.37520025!3d7.8821946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305031b26859336d%3A0x66f64240751a0211!2sPhuket%2C%20Mueang%20Phuket%20District%2C%20Phuket%2C%20Thailand!5e1!3m2!1sen!2sus!4v1695123456789!5m2!1sen!2sus" width="850" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+
+            <div class="border-b border-[#E7E6E6]">
+                <h1 class="font-primary font-bold text-text-color text-3xl mt-15 mb-5">Availability Calendar</h1>
+           
+                <div class="mb-15">
+                    
+                    <input type="text" class="input max-w-sm" placeholder="YYYY-MM-DD" id="flatpickr-date" />
+
+                </div>
+
+            </div>
+
         </div>  
 
+       
 
 
 
 
 
 
-        
       <!-- side div -->
         <div>
             <div class="border border-[#E7E6E6] p-8 rounded-xl drop-shadow-lg">
@@ -285,8 +352,99 @@
                     <h3 class="font-primary font-medium text-text-color text-lg">$530.00</h3>
                 </div>
 
-                <a href="#" class="bg-primary-color rounded-xl text-white font-primary font-medium text-base py-5 pl-25 pr-30">Book Now</a>
+                <a href="#" class="bg-primary-color rounded-xl text-white font-primary font-medium text-base py-5 pl-25 pr-25">Book Now</a>
                 <div class="mt-5"></div>
             </div>
         </div>
     </section>
+
+
+    <footer class=" mt-[50px] md:mt-[50px] mb-[50px] md:mb-[100px] ml-4 md:ml-[150px] mr-4 md:mr-[150px]">
+            <div class="flex justify-between items-center pt-10 border-b border-[#EB662B] pb-10">
+               <h2 class="text-text-color font-medium font-primary text-lg md:text-xl">Speak to our expert at<span class="text-primary-color">1-800-453-6744</span><h2>
+                <a href="#" class="text-text-color hover:text-primary-color font-primary font-medium text-sm md:text-base mb-10">Follow Us</a>
+            </div>
+        <div class="flex flex-col md:flex-row justify-between items-start flex-wrap pt-10">
+            <div class="pb-10 w-full md:w-auto">
+                <h1 class="font-primary font-medium text-xl text-text-color mb-5">Contact</h1>
+                <li class="list-none w-full md:w-[293px] mt-4 md:mt-8 font-primary text-sm md:text-base text-left mb-2 md:mb-4">328 Queensberry Street, North Melbourne VIC3051, Australia.</li>
+                <li class="list-none w-full md:w-[293px] mt-4 md:mt-8 font-primary text-sm md:text-base text-left mb-2 md:mb-4">hi@viatours.com</li>
+            </div>
+
+            <div class="pb-10 w-full md:w-auto">
+                <h3 class="pb-6 md:pb-10 list-none font-primary font-semibold text-text-color text-base md:text-lg text-left">Company</h3>
+                
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">About Us</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Tourz Reviews</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Contact Us</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Travel Guides</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Data Policy</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Cookie Policy</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Legal</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Sitemap</li>
+            </div>
+
+            <div class="pb-10 w-full md:w-auto">
+                <h3 class="pb-6 md:pb-10 list-none font-primary font-semibold text-text-color text-base md:text-lg text-left">Support</h3>
+                
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Get in Touch</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Help center</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Contact Us</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Live chat</li>
+                <li class="pb-2 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">How it works</li>
+            </div>
+
+            <div class="pb-10 w-full md:w-auto">
+                <h3 class="pb-6 md:pb-10 list-none font-primary font-semibold text-text-color text-base md:text-lg text-left">Newsletter</h3>       
+                <li class="pb-2 md:pb-4 list-none text-text-color font-primary text-sm md:text-base text-left font-medium">Subscribe to the free newsletter and stay <br> up to date</li>
+                <li class="list-none bg-white rounded-xl border border-[#E7E6E6]"><input class="font-primary p-5 text-sm text-[#757575]" type="email" name="" id="" placeholder="Your email address"><a href="#" class="font-primary text-text-color text-sm ">Send</a></li>
+
+                <h3 class="pb-6 md:pb-4 list-none font-primary font-semibold text-text-color text-base md:text-lg text-left mt-5">Mobile Apps</h3>       
+                <li class="pb-2 pl-7 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">iOS App</li>
+                <li class="pb-2 pl-7 md:pb-4 list-none hover:text-primary-color text-text-color cursor-pointer font-primary text-sm md:text-base text-left font-medium">Android App</li>
+            </div>
+
+        </div>
+
+        <div class="pt-10 flex flex-col md:flex-row gap-4 md:gap-240 justify-start flex-wrap">
+            
+            <p class="list-none font-primary text-sm md:text-base text-text-color">© Copyright Viatours 2025</p>
+            
+            
+        </div>
+    </footer>
+
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+        const lines = btn.querySelectorAll('span');
+        
+        btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        
+        lines[0].classList.toggle('rotate-45');
+        lines[0].classList.toggle('translate-y-2.5');
+        
+        lines[1].classList.toggle('opacity-0');
+
+        lines[2].classList.toggle('-rotate-45');
+        lines[2].classList.toggle('-translate-y-2.5');
+        });
+
+        var swiper = new Swiper(".default-carousel", {
+        loop: true,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        });
+
+    </script> 
+
+</body>
+</html>
